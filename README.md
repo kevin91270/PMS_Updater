@@ -1,7 +1,22 @@
 PMS_Updater
 ===========
 
+This is updated version of PMS_Updater. Updater is confirmed to work on latest FreeNas 11.2-RC1
+
+
+To Updated run This
+```
+fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_Updater.sh
+chmod 755 PMS_Updater.sh
+./PMS_Updater.sh -u [username] -p [password] -a -v
+
+
+```
+
+
+
 PMS_Updater.sh is a shell script for updating the Plex Media Server inside the FreeNAS Plex plugin
+
 
 ---
 
