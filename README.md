@@ -4,7 +4,7 @@ PMS_Updater
 This is updated version of PMS_Updater. Updater is confirmed to work on latest FreeNas 11.2-RC1
 
 
-To Update Run this if you have Plex Plugin installed.
+If you have plex plugin installed run this to update
 ```
 pkg install ca_root_nss 
 pkg install wget
@@ -13,7 +13,7 @@ fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/ma
 chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
 ```
-If You have installed PLEX Pass
+If You have installed PLEX Pass Plugin
 ```
 pkg install ca_root_nss
 pkg install wget
@@ -23,8 +23,17 @@ chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
 ```
 
+To run cron job for script to auto update plex do this
+```
+cd /usr
+fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_UpdaterPLEXPASS.sh
+chmod 755 PMS_Updater.sh
+```
 
-
+Cron job command run it as root
+```
+iocage exec plex "/usr/PMS_Updater.sh -u [username] -p [password] -a -v"
+```
 PMS_Updater.sh is a shell script for updating the Plex Media Server inside the FreeNAS Plex plugin
 
 
