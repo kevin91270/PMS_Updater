@@ -26,7 +26,7 @@ chmod 755 PMS_Updater.sh
 To run cron job for script to auto update plex do this
 ```
 cd /usr
-fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_UpdaterPLEXPASS.sh
+fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_Updater.sh
 chmod 755 PMS_Updater.sh
 ```
 
