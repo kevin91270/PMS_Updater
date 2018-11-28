@@ -23,17 +23,6 @@ chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
 ```
 
-To run cron job for script to auto update plex do this
-```
-cd /usr
-fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_Updater.sh
-chmod 755 PMS_Updater.sh
-```
-
-Cron job command run it as root
-```
-iocage exec plex "/usr/PMS_Updater.sh -u [username] -p [password] -a -v"
-```
 PMS_Updater.sh is a shell script for updating the Plex Media Server inside the FreeNAS Plex plugin
 
 
