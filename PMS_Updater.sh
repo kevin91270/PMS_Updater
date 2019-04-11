@@ -81,9 +81,8 @@ LogMsg()
 ##      so v0.9.9.10.485 becomes 00000009000900100485
 verNum()
 {
-    echo "$@" | awk -F '[^0-9]+' '{ printf("%04d%04d%04d%04d%04d", $1,$2,$3,$4,$5)}'
+    echo "$@" | sed -e 's/^.*[^\.]\([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\)\([^\.]\)/\1.0\2/' | awk -F. '{ printf("%04d%04d%04d%04d%04d", $1,$2,$3,$4,$5)}'
 }
-
 
 ##  removeOlder()
 ##  READS:    $DOWNLOADPATH $PMSPATTERN $CURRENTVER $VERBOSE $LOGGING
