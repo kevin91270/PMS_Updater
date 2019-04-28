@@ -5,32 +5,26 @@ This is updated version of PMS_Updater. Updater is confirmed to work on latest F
 
 
 If you have plex plugin installed [*Run First Five commands only first time, after that you need to run only the last command*]
-```
-pkg install ca_root_nss 
+```pkg install ca_root_nss 
 pkg install wget
 pkg install perl5
 fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_Updater.sh
 chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
-
 ```
 If after update you've got an error "Server settings are unavailable"
-```
-cd /usr/local/share/plexmediaserver/lib/
+```cd /usr/local/share/plexmediaserver/lib/
 mv * ..
-
 ```
 Restart Jail after and it should start working normally
 
 If You have installed PLEX Pass Plugin [*Run First Five commands only first time, after that you need to run only the last command*]
-```
-pkg install ca_root_nss
+```pkg install ca_root_nss
 pkg install wget
 pkg install perl5
 fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/master/PMS_UpdaterPLEXPASS.sh
 chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
-
 ```
 
 PMS_Updater.sh is a shell script for updating the Plex Media Server inside the FreeNAS Plex plugin
