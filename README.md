@@ -1,7 +1,7 @@
 PMS_Updater
 ===========
 
-This is updated version of PMS_Updater. Updater is confirmed to work on latest FreeNas 11.2-U4.1
+This is updated version of PMS_Updater. Updater is confirmed to work on latest FreeNas 11.2-U5
 
 
 If you have plex plugin installed [*Run First Five commands only first time, after that you need to run only the last command*]
