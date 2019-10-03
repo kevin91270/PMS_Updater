@@ -13,7 +13,7 @@ fetch -o PMS_Updater.sh https://raw.githubusercontent.com/luluhoc/PMS_Updater/ma
 chmod 755 PMS_Updater.sh
 ./PMS_Updater.sh -u [username] -p [password] -a -v
 ```
-If after update you've got an error "Server settings are unavailable"
+If after update you've got an error `Server settings are unavailable`
 ```
 cd /usr/local/share/plexmediaserver/lib/
 mv * ..
