@@ -1,4 +1,4 @@
-PMS_Updater
+PMS_Updater Instructions by luluhoc
 ===========
 
 This is updated version of PMS_Updater. Updater is confirmed to work on latest FreeNas 11.2-U6
